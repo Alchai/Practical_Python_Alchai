@@ -38,12 +38,15 @@ import re  # Regular expressions just seem to be the easiest way to quickly and 
 
 def Parse_Email():
     Header_Data = []
+    Body_Data = []
     ToScan= re.compile(r'To: [\w\s]+?<([\w\-][\w\-\.]+@[\w\-][\w\-\.]+[a-zA-Z]{1,4})>') 
     #It is important to note that this only grabs the first email
     #address. I should extend it to cover more (; seperated) in the future.
     FromScan= re.compile(r'From: [\w\s]+?<([\w\-][\w\-\.]+@[\w\-][\w\-\.]+[a-zA-Z]{1,4})>')
     DateScan = re.compile(r'Date: (.*)')
     SubjectScan= re.compile(r'Subject: (.*)')
+
+    
     #
     # To clarify the above: A pattern is compiled for each regular expression to be matched.
     # To dissect the regular expressions a bit, the "To:" simply tries to match that string
@@ -57,8 +60,21 @@ def Parse_Email():
         Header_Data.extend([m.group(1) for m in SubjectScan.finditer(line)]) # header label will be stored.       
         Header_Data.extend([m.group(1) for m in FromScan.finditer(line)])
         Header_Data.extend([m.group(1) for m in ToScan.finditer(line)])
+
+        
+
+            
                 # The results are stored in the Header_Data list for quick reference and assignment.
     print Header_Data
-    #May be useful to return the data parsed, for now, the output should suffice.
-
+    
+    # Another way of doing things would be to read the data from the .txt file into a string:
+    f = open('email.txt', 'r')
+    email = f.read()
+    #The regular expressions can then be used to find the data between two strings - assuming the RFC2822
+    # Dictates that the body must have the boundary term '--xxxxx...xx--', one might be able to search via:
+    body = re.findall(r'ISO-8859-1(.*?)--', email, re.DOTALL)
+    print body[1]
+    
+    #It may also be useful to return the data parsed, for now, the output should suffice to fill the needs of the practical. 
+    
 Parse_Email()
