@@ -1,0 +1,22 @@
+                                                                                                                                                                                                                                                               
+MIME-Version: 1.0
+Received: by 10.194.143.42 with HTTP; Thu, 13 Dec 2012 12:22:53 -0800 (PST)
+Date: Thu, 13 Dec 2012 15:22:53 -0500
+Delivered-To: bush.joshua@gmail.com
+Message-ID: <CADCMu4Auimw443sx6S29dNdrC-kA8cBwduu7DoP7T8YwnwOMQw@mail.gmail.com>
+Subject: Coding Practical
+From: Joshua Bush <bush.joshua@gmail.com>
+To: Joshua Bush <bush.joshua@gmail.com>; Jbush <jbush@specialmetals.com>
+Content-Type: multipart/alternative; boundary=047d7b671e8802622004d0c1aede
+
+--047d7b671e8802622004d0c1aede
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hello World!
+
+--047d7b671e8802622004d0c1aede
+Content-Type: text/html; charset=ISO-8859-1
+
+Hello World!
+
+--047d7b671e8802622004d0c1aede--
