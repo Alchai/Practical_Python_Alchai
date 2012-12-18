@@ -5,7 +5,7 @@
 ##*****************************************************************************************##
 ## Python_Practical_Parser.py
 ## This program was created to satisfy the 'coding practical' portion of
-## the requirements of Cloudspace's process.
+## the requirements of Cloudspace's application process.
 #
 #
 ## The program is designed to take a raw email .txt file, and parse it for
