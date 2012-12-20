@@ -7,12 +7,12 @@ I tried to keep myself to a 60 minute max on the python verison, and a 90 minute
 ruby version I have made (in a different repository). 
 If I were to take more time with this, I would of course:
 - Create better handling of multipart emails and
-- Consider handling the various MIME types one might encounter in a more complex email,
+- Consider handling the various other MIME types one might encounter in a more complex email, such as audio, images, or video.
 Also, 
- -Creating a list, or a menu potentially, to allow the user to decide what is most relevant, 
-  I think would also be paramount. It is easy for me to say what should be parsed for, but
+ -Creating a list or a menu to allow the user to decide what is most relevant, 
+  I think, would also be paramount. It is easy for me to say what should be parsed for, but
   suppose the user wanted to count the number of times each letter is used in an email for 
-  the sake of some strange cryptological reasons.
+  the sake of some strange cryptological reasons, or wanted some other data...
 
   I've always used coding as a tool to serve the purpose at hand. It is interesting to me
   to finally consider the code as a good or a service provided to someone else.
